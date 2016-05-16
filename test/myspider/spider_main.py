@@ -1,3 +1,5 @@
+import urllib
+
 from test.myspider import url_manager, html_downloader, html_parser, html_outputer
 
 
@@ -33,3 +35,10 @@ if __name__ == "__main__":
     root_url = "http://baike.baidu.com/view/21087.htm"
     obj_spider = SpiderMain()
     obj_spider.craw(root_url)
+
+    # urld ='http://v2.mukewang.com/e68ac736-375c-41b1-a79a-12f1157a595f/L.mp4?auth_key=1463405417-0-0-e18c7d1a2a491dccf3f3fceb770db606'
+    # f = open('p.mp4', 'wb')
+    # req = urllib.request.Request(urld, headers={'Referer': 'http://www.imooc.com'})
+    # data = urllib.request.urlopen(req).read()
+    # f.write(data)
+    # f.close()
